@@ -3,10 +3,13 @@ window.addEventListener("load", function() {
     Modernizr.load([
         {
             load : [
-                "js/game.js",
+            	"js/game.js",
+                "js/jquery.min.js",
+                
             ],
             complete : function() {
-                alert("Ready");
+                /*$(cover).hover( function(){ alert("Ready....");});*/
+                $(cover).hover(GameModule.test());
             }
         }
     ]);
